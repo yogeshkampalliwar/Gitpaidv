@@ -1,32 +1,47 @@
-# React + TypeScript + Vite
+# 💰 GitPaid
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Pay developers automatically for GitHub contributions via smart contract**
 
-Currently, two official plugins are available:
+GitPaid allows project owners to create ETH bounties on GitHub issues. When a developer solves the issue, the owner pays them directly via Ethereum smart contract — no middleman, instant payment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Problem
 
-## React Compiler
+Open source developers contribute thousands of hours with no payment. Project owners want to reward contributors but have no easy crypto payment system.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✅ Solution
 
-## Expanding the Oxlint configuration
+- Project owner creates bounty on GitHub issue with ETH
+- Developer solves issue and submits PR
+- Owner pays developer directly via smart contract
+- Instant ETH transfer, no middleman
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🌐 Live Demo
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+https://casperai-chi.vercel.app
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 📜 Smart Contract
+
+- Network: Base Sepolia Testnet
+- Address: 0x6E7454907D72bd5eff1e93b4f37CD57Dc527D809
+
+## 🔧 Tech Stack
+
+- React 19 + TypeScript + Vite
+- Ethers.js v6
+- Solidity Smart Contract
+- Base Network (Ethereum L2)
+
+## 🚀 Getting Started
+
+npm install
+npm run dev
+
+## 👤 Builder
+
+Yogesh Kampalliwar
+- GitHub: https://github.com/yogeshkampalliwar
+- Twitter: https://twitter.com/yogeshr50283421
+
+## 📄 License
+
+MIT
